@@ -73,7 +73,11 @@ export function PostCard({ post }) {
     <article className="card post-card">
       <div
         className={`card-visual visual-${post.categoryKey}`}
-        style={{ backgroundImage: `linear-gradient(rgba(45,38,49,.18), rgba(45,38,49,.5)), url('/demo-image/${post.slug}')` }}
+        style={{
+          backgroundImage: `linear-gradient(rgba(45,38,49,.18), rgba(45,38,49,.5)), url('/demo-image/${post.slug}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
         aria-hidden="true"
       >
         <span>{post.category}</span>

@@ -12,7 +12,7 @@ function esc(value = "") {
 }
 
 function rfcDate(iso, hour = 10) {
-  return new Date(`${iso}T${String(hour).padStart(2, "0")}:00:00+02:00`).toUTCString();
+  return new Date(`${iso}T${String(hour).padStart(2, "0")}:00:00Z`).toUTCString();
 }
 
 export async function GET() {
@@ -27,13 +27,13 @@ export async function GET() {
     image: `${site}/demo-image/${post.slug}`
   }));
 
-  const events = getEvents().map((event) => ({
+  const events = getEvents().map((event, index) => ({
     title: `Agenda: ${event.title}`,
     link: `${site}/agenda#${event.slug}`,
     guid: `event-${event.slug}-${event.date.iso}`,
     description: `${event.dateLabel}, ${event.time}–${event.end}. ${event.summary} Locatie: ${event.location}.`,
     category: "Agenda",
-    pubDate: rfcDate(event.date.iso, 8),
+    pubDate: new Date(Date.now() - (12 + index * 6) * 60 * 60 * 1000).toUTCString(),
     image: `${site}/demo-image/${event.slug}`
   }));
 

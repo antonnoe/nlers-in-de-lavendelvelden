@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Poppins:wght@600;700&display=swap');
+
+:root {
+  --ink: #283028;
+  --muted: #6f756f;
+  --paper: #fffdf9;
+  --soft: #f4f0e9;
+  --lavender: #75608e;
+  --lavender-dark: #55436b;
+  --green: #5d6f55;
+  --border: #ddd5cb;
+  --accent: #8b6d42;
+  --shadow: 0 8px 24px rgba(52, 45, 38, 0.08);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--soft);
+  color: var(--ink);
+  font-family: "Mulish", Arial, sans-serif;
+  line-height: 1.8;
+}
+
+a { color: inherit; }
+img { max-width: 100%; }
+.container { width: min(1120px, calc(100% - 36px)); margin: 0 auto; }
+.demo-strip {
+  background: #342f38;
+  color: #fff;
+  text-align: center;
+  padding: 7px 12px;
+  font-size: 12px;
+  letter-spacing: .11em;
+  font-weight: 700;
+}
+.hero {
+  min-height: 360px;
+  background:
+    linear-gradient(90deg, rgba(36,31,38,.28), rgba(36,31,38,.05)),
+    linear-gradient(135deg, #9a83a8, #d7b28a 54%, #77846d);
+  background-image:
+    linear-gradient(90deg, rgba(36,31,38,.3), rgba(36,31,38,.06)),
+    url('/lavendelvelden-banner.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+}
+.hero-overlay { width: 100%; padding: 80px 0 42px; background: linear-gradient(transparent 15%, rgba(30,27,31,.56)); }
+.hero-inner { color: #fff; text-shadow: 0 2px 12px rgba(0,0,0,.32); }
+.hero h1, h1, h2, h3 { font-family: "Poppins", Arial, sans-serif; line-height: 1.2; }
+.hero h1 { margin: 5px 0 4px; font-size: clamp(36px, 5vw, 64px); }
+.hero-sub { margin: 0; font-size: 19px; max-width: 700px; }
+.eyebrow { margin: 0; text-transform: uppercase; letter-spacing: .11em; font-size: 12px; font-weight: 800; }
+.eyebrow.dark { color: var(--lavender-dark); }
+.main-nav { background: #fff; border-bottom: 1px solid var(--border); box-shadow: 0 2px 10px rgba(0,0,0,.04); }
+.nav-inner { display: flex; flex-wrap: wrap; gap: 0; }
+.nav-inner a { text-decoration: none; padding: 15px 13px; font-weight: 700; font-size: 14px; border-bottom: 3px solid transparent; }
+.nav-inner a:hover { color: var(--lavender-dark); border-color: var(--lavender); }
+main { min-height: 60vh; }
+.page-intro { padding: 58px 0 28px; }
+.page-intro h2 { font-size: clamp(30px, 4vw, 46px); margin: 7px 0 12px; }
+.page-intro p { max-width: 820px; margin: 0; font-size: 18px; color: #535a53; }
+.home-grid { display: grid; grid-template-columns: 1.8fr 1fr; gap: 32px; padding: 44px 0; }
+.panel { background: var(--paper); border: 1px solid var(--border); box-shadow: var(--shadow); padding: 24px; }
+.section { padding: 28px 0 52px; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 18px; margin-bottom: 20px; }
+.section-heading h2 { margin: 0; font-size: 28px; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.card { background: var(--paper); border: 1px solid var(--border); box-shadow: var(--shadow); overflow: hidden; }
+.card-visual { min-height: 118px; padding: 16px; display: flex; align-items: end; color: #fff; font-weight: 800; letter-spacing: .03em; }
+.visual-bestuur { background: linear-gradient(135deg, #51455f, #907ba3); }
+.visual-leden { background: linear-gradient(135deg, #60725a, #a7a776); }
+.visual-partners { background: linear-gradient(135deg, #7b6547, #c2a06f); }
+.visual-verenigingsnieuws { background: linear-gradient(135deg, #5a6471, #8da0b6); }
+.visual-praktisch { background: linear-gradient(135deg, #856b5c, #b8907c); }
+.card-body { padding: 20px; }
+.card-body h3 { margin: 4px 0 10px; font-size: 20px; }
+.card-body h3 a { text-decoration: none; }
+.card-body h3 a:hover { color: var(--lavender-dark); }
+.meta { font-size: 12px; text-transform: uppercase; letter-spacing: .055em; color: var(--muted); margin: 0 0 5px; font-weight: 700; }
+.text-link { color: var(--lavender-dark); font-weight: 800; text-decoration: none; }
+.events { display: grid; gap: 14px; }
+.event-card { background: #fff; border: 1px solid var(--border); display: grid; grid-template-columns: 76px 1fr; gap: 18px; padding: 18px; }
+.event-date { background: var(--lavender-dark); color: #fff; text-align: center; align-self: start; padding: 10px 4px; }
+.event-date strong { display: block; font-family: "Poppins"; font-size: 28px; line-height: 1; }
+.event-date span { font-size: 12px; text-transform: uppercase; }
+.event-card h3 { margin: 2px 0 5px; }
+.event-card p { margin: 0; }
+.notice { border-left: 5px solid var(--lavender); background: #eee7f3; padding: 18px 20px; margin: 22px 0; }
+.feed-box { background: #fff; border: 1px solid var(--border); padding: 22px; }
+.feed-box code { display: inline-block; background: #f2eee7; padding: 4px 7px; border-radius: 3px; }
+.article-shell { width: min(820px, calc(100% - 36px)); margin: 0 auto; padding: 52px 0 70px; }
+.article-shell h2 { font-size: clamp(30px, 4vw, 46px); margin: 8px 0 12px; }
+.article-shell .lead { font-size: 20px; color: #525752; }
+.article-shell .article-body { background: #fff; border: 1px solid var(--border); box-shadow: var(--shadow); padding: 30px; margin-top: 26px; }
+.article-shell .article-body p { margin: 0 0 18px; }
+.article-shell .article-body p:last-child { margin-bottom: 0; }
+.list-stack { display: grid; gap: 18px; }
+.simple-row { background: #fff; border: 1px solid var(--border); padding: 22px; }
+.simple-row h3 { margin: 4px 0 8px; }
+.simple-row p { margin: 0; }
+.site-footer { margin-top: 50px; background: #302d31; color: #eee; padding: 40px 0; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 34px; }
+.site-footer h2, .site-footer h3 { margin-top: 0; }
+.site-footer a { color: #fff; }
+.site-footer p { color: #d3cdd4; }
+
+@media (max-width: 900px) {
+  .cards { grid-template-columns: 1fr 1fr; }
+  .home-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 620px) {
+  .container { width: min(100% - 24px, 1120px); }
+  .hero { min-height: 300px; }
+  .hero-overlay { padding: 60px 0 28px; }
+  .cards { grid-template-columns: 1fr; }
+  .nav-inner { overflow-x: auto; flex-wrap: nowrap; }
+  .nav-inner a { white-space: nowrap; }
+  .event-card { grid-template-columns: 62px 1fr; }
+  .section-heading { align-items: start; flex-direction: column; }
+}

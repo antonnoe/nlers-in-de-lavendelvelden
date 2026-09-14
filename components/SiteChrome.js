@@ -71,7 +71,11 @@ export function PageIntro({ kicker, title, children }) {
 export function PostCard({ post }) {
   return (
     <article className="card post-card">
-      <div className={`card-visual visual-${post.categoryKey}`} aria-hidden="true">
+      <div
+        className={`card-visual visual-${post.categoryKey}`}
+        style={{ backgroundImage: `linear-gradient(rgba(45,38,49,.18), rgba(45,38,49,.5)), url('/demo-image/${post.slug}')` }}
+        aria-hidden="true"
+      >
         <span>{post.category}</span>
       </div>
       <div className="card-body">

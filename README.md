@@ -22,6 +22,8 @@ De agenda bestaat uit vaste regels in `lib/demoData.js` (`recurringRules`) plus 
 - Verder: koffieochtend (2e woensdag), taalcafé (1e en 3e maandag, niet in juli en augustus), klaverjassen (2e en 4e maandag), bijpraatlunch (4e donderdag), pétanque (laatste vrijdag april tot oktober), fietstocht (3e zondag april tot september), ALV (2e zaterdag maart), Koningsdag, welkomstmiddag nieuwe leden, lavendeldistilleerderij, zomerpicknick, wijnoogst, kerstlunch
 - Testitems: één activiteit in het verleden en één geannuleerde (STATUS:CANCELLED)
 
+Verslagen: twee dagen na elke afgelopen activiteit van de afgelopen drie maanden verschijnt vanzelf een verslag (rubriek Verslagen, ook in de RSS-feed). De teksten staan per soort activiteit in `lib/verslagen.js`, met een paar varianten die per maand wisselen. Voor klaverjassen en het taalcafé worden geen verslagen gemaakt.
+
 Bereik: de iCal-feed loopt van 60 dagen terug tot een jaar vooruit, de RSS-feed van 14 dagen terug tot 60 dagen vooruit, de agendapagina toont de komende zes maanden per maand.
 
 ## Banner

@@ -76,6 +76,7 @@ main { min-height: 60vh; }
 .visual-partners { background: linear-gradient(135deg, #7b6547, #c2a06f); }
 .visual-verenigingsnieuws { background: linear-gradient(135deg, #5a6471, #8da0b6); }
 .visual-praktisch { background: linear-gradient(135deg, #856b5c, #b8907c); }
+.visual-verslagen { background: linear-gradient(135deg, #6e5687, #c99a6b); }
 .card-body { padding: 20px; }
 .card-body h3 { margin: 4px 0 10px; font-size: 20px; }
 .card-body h3 a { text-decoration: none; }

@@ -3,6 +3,7 @@ import Link from "next/link";
 const navItems = [
   ["/", "Home"],
   ["/agenda", "Agenda"],
+  ["/verslagen", "Verslagen"],
   ["/bestuur", "Bestuur"],
   ["/leden", "Van leden"],
   ["/partners", "Partners"],

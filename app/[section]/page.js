@@ -23,6 +23,12 @@ const sections = {
     intro: "Voorbeeldbijdragen van volledig fictieve partners. Ze zijn bewust herkenbaar gehouden als partnercontent.",
     categoryKey: "partners"
   },
+  verslagen: {
+    title: "Verslagen",
+    kicker: "Terugblik",
+    intro: "Hoe was het? Korte verslagen van onze afgelopen activiteiten, geschreven door fictieve leden.",
+    categoryKey: "verslagen"
+  },
   verenigingsnieuws: {
     title: "Verenigingsnieuws",
     kicker: "Nieuws",

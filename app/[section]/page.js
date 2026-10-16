@@ -43,8 +43,8 @@ const sections = {
   },
   "over-ons": {
     title: "Over de vereniging",
-    kicker: "Sinds kort, maar alleen in deze demo",
-    intro: "NL'ers in de lavendelvelden is geen echte vereniging. De site simuleert een klassieke Nederlandse vereniging in Zuid-Frankrijk voor demonstraties van de NieuwsbriefAssistent.",
+    kicker: "Over ons",
+    intro: "Een vereniging van en voor Nederlanders in de Luberon en de Vaucluse. Gezellig, behulpzaam en een tikje eigenwijs. En, eerlijk is eerlijk, volledig fictief.",
     special: true
   }
 };
@@ -59,11 +59,35 @@ export default async function SectionPage({ params }) {
       <>
         <PageIntro kicker={config.kicker} title={config.title}>{config.intro}</PageIntro>
         <section className="section container">
-          <div className="panel">
-            <h2>Een geloofwaardige bron, geen echte organisatie</h2>
-            <p>De vereniging telt in de demo ongeveer 200 leden en is gevestigd in de Luberon/Vaucluse. De website bevat bestuursberichten, ledeninzendingen, verenigingsnieuws, partnerbijdragen en een agenda.</p>
-            <p>De inhoud is ontworpen om verschillende typen input te leveren aan de NieuwsbriefAssistent. Er worden geen echte persoonsgegevens verwerkt en de site is ingesteld op <strong>noindex, nofollow</strong>.</p>
+          <div className="about-grid">
+            <div className="panel">
+              <h2>Hoe het begon</h2>
+              <p>Het verhaal gaat dat zes Nederlanders elkaar op een regenachtige dinsdag tegenkwamen in een café in Apt, omdat ze alle zes op zoek waren naar dezelfde loodgieter. De loodgieter kwam niet opdagen, de vereniging was geboren.</p>
+              <p>Inmiddels telt de vereniging ongeveer tweehonderd leden, van Cavaillon tot Sault en van Gordes tot Pertuis. We organiseren wandelingen, lezingen, lunches, feesten en vooral heel veel koffieochtenden.</p>
+            </div>
+            <div className="panel">
+              <h2>Waar we voor staan</h2>
+              <p>Elkaar ontmoeten, elkaar helpen en samen de streek ontdekken. We zijn een vereniging van Nederlanders, maar we kijken graag naar buiten: Franse buren zijn altijd welkom, bij het taalcafé en bij onze feesten.</p>
+              <p>We zijn geen belangenvereniging en geven geen officieel advies. Wel delen leden hun ervaringen, en daar heb je vaak meer aan dan je denkt.</p>
+            </div>
+            <div className="panel">
+              <h2>Het bestuur</h2>
+              <ul className="plain-list">
+                <li><strong>Voorzitter:</strong> Margriet, Bonnieux</li>
+                <li><strong>Secretaris:</strong> Joost, Saignon</li>
+                <li><strong>Penningmeester:</strong> Frank, Apt</li>
+                <li><strong>Activiteiten:</strong> Ineke, Lourmarin</li>
+                <li><strong>Nieuwsbrief en website:</strong> Ruud, Goult</li>
+              </ul>
+              <p>Daarnaast zijn er een routecommissie, een kascommissie en een vaste ploeg voor de koffieochtend.</p>
+            </div>
+            <div className="panel">
+              <h2>Lid worden</h2>
+              <p>Iedereen die zich verbonden voelt met Nederland en in of rond de Luberon woont, of hier regelmatig verblijft, is welkom. De contributie is 35 euro per huishouden per jaar.</p>
+              <p>Leden ontvangen de nieuwsbrief, krijgen korting bij activiteiten en zijn welkom bij de algemene ledenvergadering. Aanmelden kan via <strong>leden@lavendelvelden.demo</strong>.</p>
+            </div>
           </div>
+          <div className="notice"><strong>Let op:</strong> deze vereniging bestaat niet. Alle namen, bedragen, adressen en berichten zijn verzonnen voor de demonstratie van de NieuwsbriefAssistent. De site is ingesteld op <strong>noindex, nofollow</strong>.</div>
         </section>
       </>
     );

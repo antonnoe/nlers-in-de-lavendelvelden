@@ -26,6 +26,9 @@ Verslagen: twee dagen na elke afgelopen activiteit van de afgelopen drie maanden
 
 Bereik: de iCal-feed loopt van 60 dagen terug tot een jaar vooruit, de RSS-feed van 14 dagen terug tot 60 dagen vooruit, de agendapagina toont de komende zes maanden per maand.
 
+## Berichten
+De berichten per rubriek (Bestuur, Van leden, Partners, Verenigingsnieuws, Praktisch) staan in `lib/demoData.js` en `lib/berichten.js`, met datums relatief aan vandaag. Partnerbijdragen zijn van niet-bestaande bedrijven en praktische berichten zijn ervaringsberichten zonder harde bedragen of termijnen. Er staat bewust één in memoriam tussen, om de NieuwsbriefAssistent op dat soort berichten te testen.
+
 ## Banner
 Plaats de bestaande banner als:
 

@@ -27,10 +27,10 @@ export async function GET() {
     image: `${site}/demo-image/${post.slug}`
   }));
 
-  const events = getEvents().map((event, index) => ({
+  const events = getEvents({ fromDays: -14, toDays: 60 }).map((event, index) => ({
     title: `Agenda: ${event.title}`,
     link: `${site}/agenda#${event.slug}`,
-    guid: `event-${event.slug}-${event.date.iso}`,
+    guid: `event-${event.uid}`,
     description: `${event.dateLabel}, ${event.time}–${event.end}. ${event.summary} Locatie: ${event.location}.`,
     category: "Agenda",
     pubDate: new Date(Date.now() - (12 + index * 6) * 60 * 60 * 1000).toUTCString(),

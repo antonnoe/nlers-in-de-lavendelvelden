@@ -1,11 +1,11 @@
 import { EventCard, PostCard, SectionHeading } from "../components/SiteChrome";
-import { getEvents, getPosts } from "../lib/demoData";
+import { getPosts, getUpcomingEvents } from "../lib/demoData";
 
 export const dynamic = "force-dynamic";
 
 export default function HomePage() {
   const posts = getPosts();
-  const events = getEvents();
+  const events = getUpcomingEvents(90);
 
   return (
     <>
@@ -28,7 +28,7 @@ export default function HomePage() {
       <section className="section container">
         <SectionHeading title="Binnenkort op de agenda" link="/agenda" />
         <div className="events">
-          {events.slice(0, 4).map((event) => <EventCard key={event.slug} event={event} />)}
+          {events.slice(0, 6).map((event) => <EventCard key={event.slug} event={event} />)}
         </div>
       </section>
 

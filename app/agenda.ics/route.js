@@ -26,13 +26,13 @@ export async function GET() {
   const body = events.map((event) => {
     const regels = [
       "BEGIN:VEVENT",
-      `UID:${event.slug}-${event.date.iso}@lavendelvelden.demo`,
+      `UID:${event.uid}@lavendelvelden.demo`,
       `DTSTAMP:${now}`,
       `DTSTART;TZID=Europe/Paris:${compactDate(event.date.iso)}T${compactTime(event.time)}`,
       `DTEND;TZID=Europe/Paris:${compactDate(event.date.iso)}T${compactTime(event.end)}`,
       `SUMMARY:${icsEscape(event.title)}`,
       `LOCATION:${icsEscape(event.location)}`,
-      `DESCRIPTION:${icsEscape(event.summary)}`,
+      `DESCRIPTION:${icsEscape(event.recurring ? `${event.summary} Terugkerende activiteit: ${event.recurring.toLowerCase()}.` : event.summary)}`,
       `STATUS:${event.cancelled || event.geannuleerd ? "CANCELLED" : "CONFIRMED"}`,
       `URL:${site}/agenda#${event.slug}`,
       "END:VEVENT"

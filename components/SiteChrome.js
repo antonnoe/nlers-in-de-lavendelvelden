@@ -102,6 +102,7 @@ export function EventCard({ event }) {
       <div>
         <p className="meta">{event.time}–{event.end} · {event.location}</p>
         <h3>{event.title}</h3>
+        {event.recurring && <p className="event-recurring">{event.recurring}</p>}
         <p>{event.summary}</p>
       </div>
     </article>

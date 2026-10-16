@@ -89,6 +89,9 @@ main { min-height: 60vh; }
 .event-date span { font-size: 12px; text-transform: uppercase; }
 .event-card h3 { margin: 2px 0 5px; }
 .event-card p { margin: 0; }
+.event-recurring { font-size: 13px; font-weight: 600; color: var(--lavender-dark); margin: 0 0 6px !important; }
+.agenda-month { margin-bottom: 30px; }
+.agenda-month-title { text-transform: capitalize; margin: 0 0 12px; }
 .notice { border-left: 5px solid var(--lavender); background: #eee7f3; padding: 18px 20px; margin: 22px 0; }
 .feed-box { background: #fff; border: 1px solid var(--border); padding: 22px; }
 .feed-box code { display: inline-block; background: #f2eee7; padding: 4px 7px; border-radius: 3px; }

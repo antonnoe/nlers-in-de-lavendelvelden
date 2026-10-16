@@ -15,6 +15,14 @@ const navItems = [
 export function Header() {
   return (
     <>
+      <details className="ca-offer">
+        <summary><span className="ca-offer-label">Echt, niet fictief</span> Ook zo'n website voor jouw vereniging? <span className="ca-offer-more">Lees meer</span></summary>
+        <div className="ca-offer-body container">
+          <p>Deze vereniging is verzonnen, deze melding niet. <strong>Communities Abroad</strong> bouwt websites zoals deze voor Nederlandse verenigingen in Frankrijk: met een agenda die vanzelf bijblijft, verslagen, berichten van leden en bestuur, en een eigen pagina over de vereniging.</p>
+          <p>De website werkt direct samen met de NieuwsbriefAssistent: agenda en berichten komen met een paar klikken in je nieuwsbrief, zonder overtikken.</p>
+          <p><a className="ca-offer-link" href="https://www.communitiesabroad.com" target="_blank" rel="noopener">Neem contact op via communitiesabroad.com →</a></p>
+        </div>
+      </details>
       <div className="demo-strip">DEMONSTRATIEWEBSITE · FICTIEVE VERENIGING</div>
       <header className="site-header">
         <div className="hero">
@@ -52,7 +60,7 @@ export function Footer() {
         </div>
         <div>
           <h3>Belangrijk</h3>
-          <p>Namen, bedrijven, adressen en berichten op deze website zijn fictief.</p>
+          <p>Namen, bedrijven, adressen en berichten op deze website zijn fictief. Alleen de melding van Communities Abroad bovenaan is echt.</p>
         </div>
       </div>
     </footer>
